@@ -1,0 +1,57 @@
+.game {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	will-change: transform;
+	&__inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 1rem;
+		width: min(50rem, 50vw);
+		height: min(50rem, 50vw);
+		background-color: var(--cl--3);
+		@media only screen and (max-width: 768px) {
+			grid-gap: 0.5rem;
+		}
+	}
+	&__item {
+		cursor: pointer;
+		background-color: var(--cl--1);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: var(--cl--2);
+		font-size: 10rem;
+		user-select: none;
+		@media only screen and (max-width: 768px) {
+			font-size: 3rem;
+		}
+	}
+}
+
+.win {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--cl--1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	font-size: 8rem;
+	will-change: transform;
+	text-align: center;
+	color: var(--cl--2);
+	&__btn {
+		cursor: pointer;
+		font-size: 2rem;
+		margin-top: 2rem;
+		text-decoration: underline;
+	}
+}

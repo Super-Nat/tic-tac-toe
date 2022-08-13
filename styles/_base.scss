@@ -1,0 +1,43 @@
+html,
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.4rem;
+	background-color: var(--cl--1);
+	font-family: "Rubik Dirt", cursive;
+}
+
+p {
+	margin: 0;
+	font-size: 4rem;
+}
+
+footer {
+	position: absolute;
+	bottom: 2rem;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	color: var(--cl--2);
+}
