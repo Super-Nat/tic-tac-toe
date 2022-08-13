@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
 			<footer>
 				<Link href="/">
-					<a>TIC TIC TOE © 2022</a>
+					<a>TIC-TIC-TOE © 2022</a>
 				</Link>
 				<Link href="https://github.com/Super-Nat?tab=repositories">
 					<a target="_blank">Github</a>
